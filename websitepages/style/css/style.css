@@ -1,0 +1,1155 @@
+body{
+    position: relative;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: underline;
+    color: #000;
+
+}
+.height{
+    height:60px;
+}
+@media (max-width:500px){
+    
+    .navvbar{
+        position: fixed;
+        top:0;
+        right: 0;
+        width:0px;
+        overflow: hidden;
+        z-index: 500;
+        transition: .5s;
+        overflow: hidden;
+    }
+}
+.navvbar{
+    position: fixed;
+    top:0;
+    right: 0;
+    width:0px;
+    overflow: hidden;
+    z-index: 500;
+    transition: .5s;
+    overflow: hidden;
+}
+.navvbar .navvbardiv{
+    position: relative;
+    top:0;
+    left:0;
+    transform: translateX(290px);
+    height: 100vh;
+    transition: .5s;
+    background: #4834d4;
+
+}
+
+.navvbar .navvbardiv ul{
+    list-style: none;
+
+}
+.navvbar .navvbardiv ul .icon:hover{
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+.navvbar .navvbardiv ul a{
+    text-decoration: none;
+    color: #000;
+}
+.navvbar .navvbardiv ul a:hover{
+    color: #000;
+    text-decoration: underline;
+
+}
+
+
+.selector div.col-md-4 img{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    object-fit: cover;
+    width:40%;
+    opacity: 0;
+    transition: .5s;
+    transform: translateX(10px);
+}
+.selector div.col-md-4:hover img{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.selector h1{
+    position: relative;
+  border-radius: 5px;
+  height:170px;
+  width:100%;
+  transition: .5s;
+  z-index: 5;
+}
+.selector h1:hover{
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.151);
+
+}
+
+.selector h1 a{
+    color:#000;
+}
+.selector div.col-md-4:hover h1 a{
+    color:#ff3f34
+}
+.itemcard {
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width:100%;
+    height: 500px;
+}
+.itemcard a:hover {
+    text-decoration: none;
+}
+.itemcard .itemimg{
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+    z-index: 1;
+}
+.itemcard .itemimg img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.itemcard .itemtext{
+    position: relative;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    transform: translateY(50px);
+    transition: .5s;
+    z-index: 5;
+    background: #dcdde1;
+    color: #000;
+    overflow: hidden;
+    padding:15px
+}
+.itemcard:hover .itemtext{
+    transform: translateY(-270px);
+    height:100%;
+}
+.about {
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width:100%;
+    height:80vh;
+    padding: 0;
+}
+.about .img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.about h1{
+    position: relative;
+    top:50%;
+    left:0%;
+    z-index: 8;
+    font-size: 3rem;
+}
+.about h3{
+    position: relative;
+    top:50%;
+    left:0%;
+    z-index: 8;
+}
+.section1{
+    position: relative;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background: #130f40;;
+}
+.section1 h1{
+    position: relative;
+    font-size: 5rem;
+    z-index: 2;
+    color:#dff9fb
+}
+.bigtext{
+    position: relative;
+    font-size: 5rem;
+}
+
+.section1 .img{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:100%;
+    z-index: 1;
+}
+.section1-2 {
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    height:100%;
+    padding: 0;
+}
+.section1-2 .img{
+    position: relative;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100vh;
+    z-index: 1;
+}
+.section1-2 .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 1;
+}
+.colorbg{
+    background: #130f40;
+}
+.blog{
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width:100%;
+    padding: 0;
+}
+.blog .blogtext{
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width:100%;
+}
+.blog .blogtext h1{
+    font-size: 5rem;
+}
+
+.blog .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:500px;
+    overflow: hidden;
+    padding: 0;
+    margin:0;
+    
+}
+.blog .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: blur(5px) opacity(.7);
+    transition: .5s;
+}
+.blog:hover .img img{
+    filter: blur(0px) opacity(1) brightness(1);
+
+}
+.color1{
+background: #eb4d4b;
+}
+.color2{
+    background: #130f40;
+}
+.color3{
+    background: #fff200;
+}
+.product{
+    position: relative;
+    width:100%;
+    top:0;
+    left:0;
+}
+.product h6{
+    font-weight: bold;
+}
+.product p{
+    margin-top: 5px;
+}
+.product .img{
+    position: relative;
+    top:0;
+    left:0;
+    z-index: 5;
+    width:100%;
+    height: 300px;
+    overflow: hidden;
+
+}
+.product .img img{
+    position: absolute;
+    top:0;
+    left:0px;
+    z-index: 5;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.product .producttext{
+    position: relative;
+    top:0;
+    right:0;
+    overflow: hidden;
+    width:100%;
+    transform: translateX(-190px);
+    transition: .5s;
+    z-index: 1;
+}
+.product:hover .producttext {
+    transform: translateX(0px);
+
+}
+.black{
+    background: black;
+}
+.contact{
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width:100%;
+}
+.contact .contactform{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+}
+.contact  .contactimg{
+    position: relative;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width:100%;
+    height:600px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) , rgba(172, 172, 172, 0));
+}
+.contact  .contactimg img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: .6;
+
+} */
+
+
+/* edite of page */
+.section{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    overflow: hidden;
+}
+.color{
+    background: #000;
+
+}
+.section .home1 h1{
+    font-size: 5rem;
+    color: #ffff03;
+}
+.section .home1 h3{
+    font-size: 4rem;
+    color:white;
+}
+.section .home1 p{
+    font-size: 1rem;
+    color:rgb(184, 184, 184)
+}
+.section .home1 .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:600px;
+    overflow: hidden;
+}
+.section .home1 .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.section .home2 .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+}
+.section .home2 .img img{
+    position: absolute;
+    top:0;
+    left:20%;
+    width:60%;
+    height:100%;
+    object-fit: cover;
+}
+.section .home2 div.col-md-4.col-sm-12{
+    position: relative;
+    overflow: hidden;
+}
+.section .home2 .home2color{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background: #ffff03de;
+    transform: translateY(100%);
+    transition: .5s;
+}
+.section .home2 div.col-md-4:hover .home2color{
+    transform: translateY(0px);
+    transition: .5s;
+}
+.section .home3 {
+    position: relative;
+    overflow: hidden;
+}
+.section .home3 .item{
+    position: relative;
+    width:100%;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.section .home3 .item .img{
+    position: relative;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 450px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+    background: #242424d7;
+
+
+}
+.section .home3 .item .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:450px;
+    object-fit: cover;
+    transition: .5s;
+    padding: 0;
+    filter: blur(0px) opacity(.8);
+
+}
+.section .home3 .item:hover .img img{
+    filter: blur(2px) opacity(.3);
+}
+.section .home3 .item .text{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden; 
+    z-index: 2;
+    padding: 20px;
+    transform: translateY(100%);
+    transition:.5s ;
+    background: #ffff03;
+} 
+.section .home3 .item:hover  .text{
+    transform: translateY(0%);
+
+}
+.section .home3 .item .text .textone{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+}
+.section .home3 .item .text .textone .postname{
+    padding: 10px;
+}
+.section .home3 .item .text .textone .postdec{
+    position: relative;
+    top:50px;
+    color:white
+}
+.section .home3 .item .text .texttwo{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    color:#ffff03;
+}
+.section section{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.section section .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:600px;
+    overflow: hidden;
+}
+.section section .img img{
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit: cover;
+}
+.section section h1{
+    font-size: 5rem;
+}
+.section section p{
+    position: relative;
+    top:30px;
+}
+.section section .itemdata{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+}
+.section section .itemdata h4{
+    padding: 15px;
+    z-index: 5;
+}
+.section section .itemdata a{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 5;
+}
+.section section .itemdata .color{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #ffff03;
+    z-index: 1;
+    transform: translateY(100%);
+    transition: .5s;
+}
+.section section .itemdata .getlink:hover .color {
+    transform: translateY(0%);
+
+}
+.section .owl-nav{
+    position: absolute;
+    top:75%;
+    left:40%;
+    font-size: 3rem;
+    
+}
+.section .owl-nav .owl-prev{
+   margin-right: 20px;
+}
+.aboutheader{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:600px;
+    overflow: hidden;
+}
+.aboutheader .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height: 600px;
+    overflow: hidden;
+    background: #000;
+    z-index: 1;
+}
+.aboutheader .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: blur(1px) opacity(.6);
+}
+.aboutheader .text{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 5;
+}
+.aboutheader .text h1{
+    font-size: 7rem;
+    color:#ffff03
+}
+.aboutheader .text h2{
+    font-size: 3rem;
+}
+.about1 {
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.about1 .text{
+    position: relative;
+    padding: 40px;
+    margin-left:100px;
+}
+.about1 .text h5{
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+}
+.about1 .text h6{
+    font-weight: lighter;
+    font-size: 4rem;
+}
+.about1 .text p{
+    color:rgb(185, 185, 185)
+}
+.about1 .about1section1{
+    position: relative;
+    top:0;
+    left: 0;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    transition: .5s;
+}
+.about1 .about1section1 .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:400px;
+    overflow: hidden;
+    background: #000;
+    transition: .5s;
+}
+.about1 .about1section1 .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: opacity(.6);
+    transition: .5s;
+}
+.about1 .about1section1 .text{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    padding: 0;
+    margin:0 ;
+    opacity: .5;
+    transition: .5s;
+}
+.about1 .about1section1:hover .text{
+    opacity: 1;
+    transition: .5s;
+}
+.about1 .about1section1:hover .img img{
+ filter: blur(3px) opacity(.5);
+ transition: .5s;
+
+}
+.about1 .about1section1 .text .textcenter{
+    position: absolute;
+    top:10px;
+    left:0;
+    padding: 50px;
+}
+.about1 .about1section1 .text .textcenter h6{
+    font-size: 1rem;
+}
+.about1 .about1section1 .text .textcenter h5{
+    font-size: 1.1rem;
+}
+.about1 .about1section1 .text .textfooter{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+}
+.about1 .about1section1 .text .textfooter h6{
+    font-size: .9rem;
+    margin-left: 10px;
+}
+
+.about1 .color {
+    background: #4834d4;
+}
+.about2{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.about2 .section1{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.about2 .section1 .img{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:300px;
+    overflow: hidden;
+    background: #000;
+    transition: .5s;
+
+}
+.about2 .section1 .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    transition: .5s;
+    z-index: 1;
+
+}
+.about2 .section1 .text{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    opacity: .5;
+    transition: .5s;
+    z-index: 5;
+
+}
+.about2 .section1:hover .text{
+    opacity: 1;
+    transition: .5s;
+
+}
+.about2 .section1:hover .img img{
+    filter: blur(2px);
+    transition: .5s;
+
+}
+.about2 .section1 .text .cameralogo{
+    position: relative;
+    top:50px;
+    font-size: 2rem;
+}
+.about2 .section1 .text .textcenter{
+    position: relative;
+    padding: 50px;
+    width:100%;
+    height:100%;
+}
+.about2 .section1 .text .textcenter h6{
+    position: relative;
+    top:10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.about2 .section1 .text .textfooter{
+    position: absolute;
+    width:100%;
+    bottom: 0;
+}
+.about2 .section1 .text .textfooter h6{
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.about2 .section2{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    background: #4834d4;
+}
+.about2 .section2 .text{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: .5;
+    transition: .5s;
+}
+.about2 .section2 .text .textcenter{
+    padding: 50px;
+}
+.about2 .section2 .text .textcenter h6{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.about2 .section2 .text .textfooter{
+    position: absolute;
+    width:100%;
+    bottom: 0;
+}
+.about2 .section2:hover .text{
+    opacity: 1;
+    transition: .5s;
+}
+.about2 .section2 .img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    transition: .5s;
+}
+.about2 .section2 .img img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.about2 .section2:hover .img img{
+    filter: blur(1px);
+    transition: .5s;
+
+}
+.blogheader{
+    position: relative;
+    top:100%;
+     left:0;
+     width:100%;
+     height:600px;
+     overflow: hidden;
+}
+.blogheader .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:600px;
+    overflow: hidden;
+    filter:  grayscale(10%) opacity(.6);
+    z-index: 1;
+    background: #000;
+}
+.blogheader .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.blogheader .text{
+    position: absolute;
+    top:25%;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index: 5;
+}
+.blogheader .text h1{
+    font-size: 5rem;
+}
+.blogheader .text h5{
+    font-size: 2rem;
+}
+.blog1{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:600px;
+    overflow: hidden;
+}
+.blog1 .section1 .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:600px;
+    overflow: hidden;
+    z-index: 1;
+    background: #000;
+}
+.blog1 .section1 .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.blog1 .section1 .text{
+    position: absolute;
+    top:50px;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 5;
+    padding:10px;
+    transition: .5s;
+   opacity: .5;
+   transition: .5s;
+
+}
+.blog1 .section1:hover .text{
+    opacity: 1;
+    transition: .5s;
+}
+.blog1 .section1:hover .img img{
+     filter: blur(2px);
+     transition: .5s;
+}
+.blog1 .section2{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:300px;
+    overflow: hidden;
+}
+.blog1 .section2 .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+    background: #000;
+
+}
+.blog1 .section2 .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: grayscale(5%) blur(0px);
+    transition: 0.5s;
+
+}
+.blog1 .section2 .text{
+    position: absolute;
+    top:20px;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    z-index: 5;
+    padding-top: 40px;
+    padding: 20px ;
+    opacity: .6;
+    transition:0.5s;
+
+}
+.blog1 .section2:hover .text{
+    opacity: 1;
+    transition: 0.5s;
+    
+}
+.blog1 .section2:hover .img img{
+    filter: grayscale(50%);
+    transition: 0.5s;
+    
+}
+.blog1 .section3{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    background: #686de0
+}
+.blog1 .section3 h1{
+    position: absolute;
+    font-size: 9rem;
+    bottom:0;
+    right:0;
+    opacity: .2;
+    transform: translateY(50px);
+}
+.blog1 .section4{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height: 300px;
+    background: #130f40;
+
+}
+.blog1 .section5{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+
+}
+.blog1 .section5 .img{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    z-index: 1;
+    background: #000;
+}
+.blog1 .section5 .img img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: grayscale(70%) opacity(.7);
+    transition: .5s;
+}
+.blog1 .section5 .text{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 5;
+    padding: 50px;
+    opacity: .5;
+    transition: .5s;
+}
+.blog1 .section5:hover .text{
+    opacity: 1;
+    transition: .5s;
+}
+.blog1 .section5:hover .img img{
+    filter: grayscale(30%) opacity(.5);
+    transition: .5s;
+}
+.blog1 .section11edite{
+    transform: translateY(100px);
+}
+.contact {
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    background: #000;
+}
+.contact .coninfo input{
+    background: none;
+    border: none;
+    border-radius:0;
+    outline-style: none;
+    border-bottom:1px solid #ffffff ;
+    color:#fff
+}
+.contact .conmasseg{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.contact .conmasseg textarea{
+   background: none;
+    border: none;
+    border-radius:0;
+    outline-style: none;
+    height:360px;
+    border-bottom:1px solid #fff ;
+    color:#fff
+}
+.contact .conmasseg button{
+    position: relative;
+    width:100%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    bottom: 0;
+    background: #ff5252;
+    color: #ffffff;
+}
